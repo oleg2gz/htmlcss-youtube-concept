@@ -1,0 +1,377 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 70px 20px 32px;
+  margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
+}
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  background-color: #fff;
+  width: 20px;
+  height: 17px;
+  border: none;
+  cursor: pointer;
+  margin-right: 28px;
+}
+.menu-line {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: #1f2022;
+  border-radius: 20px;
+}
+.logo {
+  margin-right: 59px;
+}
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ebebeb;
+  max-width: 830px;
+  width: 50%;
+  padding-right: 17px;
+  margin-right: 40px;
+  border-radius: 22px;
+}
+.input-search {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 12px 0 12px 23px;
+}
+.button-search {
+  width: 19px;
+  height: 19px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.icon-search {
+  fill: #000;
+}
+.icon-link {
+  text-decoration: none;
+  opacity: 0.24;
+}
+.icon-link:hover {
+  opacity: 0.7;
+}
+.icon-link:not(last-child) {
+  margin-right: 50px;
+}
+.user {
+  margin-left: 45px;
+}
+.user-avatar {
+  width: 40px;
+  border-radius: 50%;
+}
+.sidebar {
+  background-color: #fff;
+  position: fixed;
+  top: 114px;
+  left: 0;
+  width: 200px;
+  height: calc(100% - 114px);
+  overflow-y: auto;
+  padding-left: 32px;
+}
+.nav-menu {
+  padding-left: 0;
+  margin: 0 0 60px;
+  list-style: none;
+}
+.nav-item {
+  margin-bottom: 28px;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: #898989;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: #ff0000;
+}
+.nav-link:hover .icon {
+  fill: #ff0000;
+}
+.nav-item .icon {
+  fill: #898989;
+}
+.nav-text {
+  margin-left: 13px;
+}
+.nav-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 30px;
+}
+.nav-image {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+.content {
+  padding: 30px 70px 0 250px;
+  margin-top: 85px;
+  width: 100%;
+}
+.channel {
+  /* Do I need the next rule? */
+  position: relative;
+  margin-bottom: 49px;
+}
+.channel-title {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+  color: #19202c;
+  width: 80%;
+}
+.channel-title-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1%;
+  margin-bottom: 30px;
+}
+.channel-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.channel-text {
+  margin-left: 20px;
+}
+.video-thumb {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 14px;
+  position: relative;
+}
+.video-thumb.recommended {
+  height: 300px;
+}
+.thumbnail {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.thumbnail.recommended {
+  height: 300px;
+}
+.video-duration {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  padding: 3px 9px;
+}
+.video-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #19202c;
+  margin: 10px 0 4px;
+}
+.video-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  line-height: 16px;
+  color: #c2c2c2;
+}
+.video-views {
+  margin-right: 5px;
+}
+.video-views::after {
+  content: '';
+  width: 2px;
+  height: 2px;
+  background-color: #c2c2c2;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.slider-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 66px;
+  margin-left: 40px;
+}
+.channel-button {
+  cursor: pointer;
+}
+.channel-text {
+  margin-right: 19px;
+}
+.channel-text-details {
+  font-size: 16px;
+  line-height: 20px;
+  color: #c2c2c2;
+}
+.subscribe-btn {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #f00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Active menu? */
+/* .nav-link.primary .icon {
+  fill: #000;
+}
+.nav-link.primary .nav-text {
+  color: #000;
+  font-weight: bold;
+} */
+
+.mobile-sidebar {
+  display: none;
+}
+.mobile-search {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .icons {
+    display: none;
+  }
+  .user {
+    margin-left: auto;
+  }
+}
+@media (max-width: 640px) {
+  .swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .swiper-slide {
+    margin-bottom: 40px;
+  }
+  .video-thumb,
+  .thumbnail {
+    height: 300px;
+  }
+  .slider-buttons {
+    display: none;
+  }
+  .mobile-search {
+    display: block;
+    margin-left: auto;
+  }
+  .user {
+    margin-left: 20px;
+  }
+  .input-group {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    opacity: 0;
+    width: 76%;
+    margin-left: 25px;
+    transition: opacity 0.3s ease 0s, top 0.3s ease 0s;
+  }
+  .input-group.is-open {
+    top: 20px;
+    opacity: 1;
+  }
+  .menu-button {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  .content {
+    padding-left: 32px;
+  }
+  .mobile-sidebar {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    background: #fff;
+  }
+  .mobile-sidebar .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0;
+    padding: 13px 0 11px;
+    border-top: 1px solid #f1f1f1;
+  }
+  .mobile-sidebar .nav-link {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-text {
+    margin-left: 0;
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .nav-item {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 560px) {
+  .user {
+    display: none;
+  }
+  .input-group {
+    width: 84%;
+  }
+  .input-group.is-open {
+    top: 15px;
+  }
+}
+
+/* 
+TODO:
+- What does this line mean exactly:
+
+.input-group {
+    transition: opacity 0.3s ease 0s, top 0.3s ease 0s;
+ */

@@ -1,0 +1,17 @@
+{
+  "name": "youtube-concept",
+  "version": "1.0.0",
+  "description": "Учебный проект GLO ACADEMY: Интенсив по верстке \"Youtube\" Проект выполнил: Олег Кравченко",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "watch": "webpack --watch --mode=development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
